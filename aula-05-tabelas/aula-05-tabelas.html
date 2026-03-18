@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tabelas no HTML5:</h1>
+    </header>
+    <main>
+        <!-- Estrutura mínima de uma tabela -->
+        <h3>Estrutura mínima:</h3>
+        <table BORDER="1">
+            <!-- linha 1 -->
+            <tr>
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+                <td>Dado 3</td>
+                <td>Dado 4</td>
+            </tr>
+            <!-- linha 2 -->
+            <tr>
+                <td>Dado 5</td>
+                <td>Dado 6</td>
+                <td>Dado 7</td>
+                <td>Dado 8</td>
+            </tr>
+        </table>
+
+        <h3>Tabela com cabeçalhos:</h3>
+        <table BORDER="1">
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+            <!-- Linha 2 -->
+            <tr>
+                <td>Notebook</td>
+                <td>R$ 3.000,00</td>
+            </tr>
+        </table>
+
+        <h3>Tabela com título</h3>
+        <Table BORDER="1">
+            <Caption>Tabela de preços:</Caption>
+            <tr>
+                <th>Serviço</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Pintur residencial</td>
+                <td>R$ 2.500,00</td>
+            </tr>
+
+        </Table>
+
+        <h3>Tabela com estrutura semântica:</h3>
+        <Table border="1">
+            <Caption>Vendas do mês:</Caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mouse</td>
+                    <td>10</td>
+                    <td>R$20,00</td>
+                </tr>
+            </tbody>
+            <!-- FOOTER -->
+            <Tfoot>
+                <tr>
+                    <td colspan="2"> Total</td>
+                    <td>R$ 200,00</td>
+                </tr>
+            </Tfoot>
+        </Table>
+
+        <h3>Mesclando linhas:</h3>
+        <Table border="1">
+            <Caption>Vendas do mês:</Caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">mouse</td>
+                    <td>10</td>
+                    <td>R$20,00</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>R$25,00</td>
+                </tr>
+            </tbody>
+            <!-- FOOTER -->
+            <Tfoot>
+                <tr>
+                    <td colspan="2"> Total</td>
+                    <td>R$ 700,00</td>
+                </tr>
+            </Tfoot>
+        </Table>
+
+        <h3>Tabela com atributo SCOPE:</h3>
+        <Table border="1">
+            <caption>Notas dos alunos por disciplinas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Design Digital</th>
+                    <th scope="col">Desenvolvimento Web</th>
+                    <th scope="col">Banco de Dados</th>
+                    <th scope="col">Algoritmos</th>
+                </tr>
+            </thead>
+
+            <body>
+                <tr>
+                    <th scope="row">Ana</th>
+                    <td>8.5</td>
+                    <td>9.0</td>
+                    <td>7.0</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bruno</th>
+                    <td>8.5</td>
+                    <td>9.0</td>
+                    <td>7.0</td>
+                    <td>8.0</td>
+                </tr>
+                <tr>
+                    <th scope="row">Carlos</th>
+                    <td>8.5</td>
+                    <td>9.0</td>
+                    <td>7.0</td>
+                    <td>8.0</td>
+                </tr>
+            </body>
+        </Table>
+
+
+    </main>
+
+
+</body>
+
+</html>
