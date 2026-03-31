@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Aluno – DSM</h1>
+        <p>Formulário destinado ao cadastramento de alunos.</p>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+                    <label for="nome">Nome completo</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome completo" required> <br>
+                    <label for="E-mail">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail" required><br>
+                    <label for="nascimento">Data de nascimento</label><br>
+                    <input type="date" name="nascimento" id="nascimento"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados acadêmicos:</legend>
+                    <label for="Curso">Curso</label><br>
+                    <select name="curso" id="">
+                        <option value="DSM">DSM</option>
+                        <option value="ASD">ADM</option>
+                        <option value="outro">outro</option>
+                    </select><br>
+                    <label for="periodo">Período:</label><br>
+                    <input type="radio" name="periodo" id="manha" value="m">Manhã
+                    <input type="radio" name="periodo" id="noite" value="n">Noite
+                    <br>
+                    <label for="observacoes">Observações:</label><br>
+                    <Textarea rows="4" cols="40" name="observacoes" id="observacoes"
+                        placeholder="Escreva aqui observações sobre o produto">
+                    </Textarea>
+                </fieldset>
+                <br><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
