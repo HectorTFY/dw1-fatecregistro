@@ -27,7 +27,8 @@ body{
 /* Características do INLINE
 - Não quebra linha
 - Ocupa apenas o conteúdo
-- Não aceita Width e Height*/
+- Não aceita width e height
+- Normalmente usado em texto*/
 
 /* DISPLAY: INLINE-BLOCK */
 .inline-block{
@@ -39,3 +40,7 @@ body{
     text-align: center;
     line-height: 50px;
 }
+/* Cacacterísticas::after
+- Fica na mesma linha
+- Aceita width e height
+- Pode ser usado em layouts de botões*/
